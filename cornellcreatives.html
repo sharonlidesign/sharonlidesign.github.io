@@ -1,15 +1,32 @@
-<?php
-include("includes/init.php");
-$title = "Sharon's Portfolio";
-?>
 <!doctype html>
 <html>
 
-<?php include("includes/head.php"); ?>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sharon's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" />
+</head>
 
 <body>
 
-	<?php include("includes/header.php"); ?>
+	<header>
+		<div class=header>
+			<div class="logo_box">
+				<a href="index.html"><img src="images/icons/temp-logo.png" alt="Logo" class="logo"/></a>
+				<!-- Logo owned by me -->
+			</div>
+			<div class="nav_box">
+				<nav>
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="https://drive.google.com/file/d/1o4_VzgHat5GJGnV9y12XSEcQpoyYkpO3/view?usp=sharing">Resume</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
 	<div id="writing">
 		<div class="projectHeader">
@@ -50,14 +67,22 @@ $title = "Sharon's Portfolio";
 		</main>
 		<div class="buttonHolder">
 			<div class="backButton">
-				<a href="index.php">&larr; Back to Home</a>
+				<a href="index.html">&larr; Back to Home</a>
 			</div>
 			<div class="topButton">
-				<a href="eventsapp.php">Next Project &rarr;</a>
+				<a href="instagram.html">Next Project &rarr;</a>
 			</div>
 		</div>
 		</div>
 
-		<?php include("includes/footer.php"); ?>
+		<footer>
+			<ul>
+				<li><a href="mailto: sl2495@cornell.edu">Email</a></li>
+				<li><a href="https://medium.com/@sharonli_75078">Medium</a></li>
+				<li><a href="https://www.linkedin.com/in/sharon-li-966966168/">LinkedIn</a></li>
+			</ul>
+			<img src="images/icons/flower-icon.png" alt="Flower Icon"/>
+			<!-- Icon owned by me -->
+		</footer>
 </body>
 </html>
