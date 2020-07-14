@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* general */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #F5F5F5;
+	font-family: "Avenir", sans-serif;
+	margin: 0;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	max-width: 1000px;
+}
+
+#myProjects img {
+	margin:30px;
+}
+
+#writing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+}
+
+header {
+	min-height: 100vh;
+	width: 100%;
+}
+
+main {
+	justify-content: center;
+}
+
+p {
+	font-size: 14pt;
+	line-height: 30pt;
+}
+
+#writing p {
+	text-align: left;
+	color: grey;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#writing main ol, #writing main ul {
+	text-align: left;
+	line-height: 30pt;
+	color: grey;
+	font-size: 14pt;
+}
+
+q {
+	font-size: 16pt;
+	display: block;
+  margin: 30pt 30pt;
+  /* color: #4AA0F0; */
+	text-align: center;
+	font-style: italic;
+}
+
+figcaption {
+	margin-top: 10px;
+	color: grey;
+	margin-bottom: 40px;
+}
+
+caption {
+	color: grey;
+}
+
+footer ul {
+	text-align: center;
+}
+
+.logoImage {
+	margin:50px;
+}
+
+h1 {
+	font-size: 60pt;
+	font-family: "Xingkai SC", serif;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+h2 {
+	font-size: 32pt;
+	line-height: 50pt;
+	/* text-align: left; */
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#writing h2 {
+	text-align: left;
+}
+
+instagram.html h2 {
+	color: #4AA0F0;
+}
+
+h3 {
+	line-height:40pt;
+	font-size: 20pt;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: dimgrey;
+}
+
+h4 {
+	font-size: 16pt;
+	line-height: 35pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: dimgrey;
+}
+
+#writing h3, #writing h4{
+	text-align: left;
+}
+
+footer h3{
+	text-align: center;
+}
+
+.picRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap:wrap;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+img:not(.logoImage), iframe {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+img.captioned {
+	margin-bottom: 0;
+}
+
+.projectHeader {
+	/* background-image: url(InstagramHeader.png);
+	background-size: cover;
+	background-position: center; */
+	text-align: center;
+}
+
+p, h1, h2, h3, h4, ul, ol {
+	margin: auto;
+	max-width: 800px;
+}
+
+/* links */
+a {
+	text-decoration: none;
+	color: #82B282;
+}
+
+a:hover {
+	color: #49A776;
+	text-decoration: underline;
+}
+
+nav {
+		margin-top: 50px;
+}
+
+nav, footer{
+	text-align: center;
+	display: inline-block;
+}
+
+nav ul, footer ul {
+	padding: 0;
+}
+
+footer li{
+	display: inline;
+	font-size: 16pt;
+	padding: 30px;
+	/* font-style: "Black"; */
+}
+
+nav li {
+	display: inline;
+	font-size: 16pt;
+	padding-right: 60pt;
+}
+
+img.projectButton:hover {
+	opacity: .5;
+}
+
+/* content*/
+.split {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 100px;
+}
+
+.split1 {
+	flex-grow: 1;
+}
+
+.split2 {
+	flex-grow: 1;
+	margin-left: 20px;
+}
+
+.arrowIcon {
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+	position: relative;
+}
+
+/* footer */
+footer {
+	display: block;
+	margin-top: 100px;
+	text-align: center;
+}
+
+footer ul {
+	margin-top: 30px;
+}
+
+/* buttons */
+.buttonHolder {
+	display: flex;
+	width: 800px;
+	margin-top: 50px;
+}
+
+.topButton, .backButton {
+	flex-grow: 1;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.topButton {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.backButton {
+	text-align: left;
+	margin-left: 10px;
+}
+
+/* responsiveness */
+@media screen and (max-width: 1000px) {
+	.split {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	#writing img{
+		width: 100%;
+	}
+
+	img.projectHeader, iframe{
+		width: 100%;
+	}
+
+	#content {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.topButton, .backButton {
+		text-align: center;
+	}
+	.projectHeader {
+	}
+	h1, h2, h3, h4 {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		margin-right:10px;
+		margin-left: 10px;
+	}
+
+	.split2 {
+		margin: 0;
+	}
+	.logoHolder {
+		display: block;
+		text-align: center;
+	}
+	/* h1, h2, h3, h4 {
+		text-align: center;
+	} */
+	.buttonHolder {
+		flex-direction: column;
+	}
+	footer ul {
+		display: flex;
+		flex-direction: column;
+	}
+	footer li{
+		padding-left: 10pt;
+		padding-right: 10pt;
+	}
+	header ul {
+		display: flex;
+		flex-direction: column;
+	}
+	main{
+		max-width: 100%;
+	}
+	nav li{
+		padding: 10pt;
+	}
+	.split{
+		margin-bottom: 50px;
+	}
+}
