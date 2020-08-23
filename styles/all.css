@@ -193,6 +193,10 @@ header {
     width: 80px;
 }
 
+ul.nav {
+    padding: 0;
+}
+
 header a {
     font-size: 12pt;
     color: #828282;
@@ -295,4 +299,73 @@ strong {
 
 .unipantry h1, .unipantry h3, .unipantry h4{
     color: #0BB8CD;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 1440px) {
+    body {
+        margin: 0 200px 0 200px;
+    }
+    
+    .row .placement{
+        flex: 0%;
+    }
+
+    .row .project-image {
+        flex: 50%;
+    }
+
+    .row .project-text {
+        flex: 50%;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 1024px) {
+    body {
+        margin: 0 100px 0 100px;
+    }
+    
+    .row {
+        flex-direction: column;
+        margin: 100px 0 100px 0;
+    }
+
+    .project-text {
+        padding: 0;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+
+    .text-first {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav li {
+        display: inline-block;
+        width: 100%;
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        margin: 0 10px 0 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 100px 0 100px 0;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
 }
