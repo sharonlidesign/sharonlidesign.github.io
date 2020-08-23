@@ -352,6 +352,19 @@ strong {
         display: inline-block;
         width: 100%;
         font-size: x-large;
+        margin: 20px 0 20px 0;
+    }
+
+    header a {
+        font-size: 24pt;
+    }
+
+    footer p {
+        font-size: 24pt;
+    }
+
+    footer {
+        padding: 0;
     }
 }
 
