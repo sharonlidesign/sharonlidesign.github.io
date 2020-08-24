@@ -57,7 +57,8 @@
 /* general */
 body {
     background-color: #FDFDFD;
-    margin: 0 200px 0 200px;
+    width: 70%;
+    margin: auto;
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -222,7 +223,7 @@ header a {
 
 .project-image {
     flex: 55%;
-    align-self: center;
+    text-align: center;
 }
 
 .project-text {
@@ -303,27 +304,10 @@ strong {
 
 /* responsiveness */
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 375px) and (max-width: 1024px) {
     body {
-        margin: 0 200px 0 200px;
-    }
-    
-    .row .placement{
-        flex: 0%;
-    }
-
-    .row .project-image {
-        flex: 50%;
-    }
-
-    .row .project-text {
-        flex: 50%;
-    }
-}
-
-@media screen and (min-width: 414px) and (max-width: 1024px) {
-    body {
-        margin: 0 100px 0 100px;
+        width: auto;
+        margin: 10px;
     }
     
     .row {
@@ -365,20 +349,5 @@ strong {
 
     footer {
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    body {
-        margin: 0 10px 0 10px;
-    }
-
-    .row {
-        flex-direction: column;
-        margin: 100px 0 100px 0;
-    }
-
-    .two-column {
-        flex-direction: column;
     }
 }
