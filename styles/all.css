@@ -98,7 +98,6 @@ h5 {
     font-family: "Open Sans", sans-serif;
     font-size: 18pt;
     font-weight: 700;
-    margin: 15px 0 15px 0;
 }
 
 h6 {
@@ -113,7 +112,7 @@ p {
     font-family: "Open Sans", sans-serif;
     font-size: 12pt;
     font-weight: 300;
-    line-height: 24pt;
+    line-height: 20pt;
 }
 
 .main-page a, .popcorn a, .about a, footer a {
@@ -290,6 +289,25 @@ strong {
     font-weight: 550;
 }
 
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 60px 0 60px 0;
+}
+
+.grid-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+
+.grid-box-image {
+    min-height: 200px;
+}
+
 /* popcorn page */
 
 .popcorn h1, .popcorn h3, .popcorn h4{
@@ -325,6 +343,14 @@ strong {
 
     .text-first {
         flex-direction: column-reverse;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .grid-box {
+        margin: 60px 0 60px 0;
     }
 
     header {
