@@ -134,7 +134,7 @@
         <div class="column-1">
           <h4>The Problem</h4>
           <h6>
-            Millions of college students who live off-campus want to eat
+            College students who live off-campus want to eat
              healthy, fulfilling meals, but cannot because of time and
               budget constraints. 
           </h6>
@@ -155,8 +155,45 @@
 
       </div>
 
-      <div class="big-image">
-        <img src="content/unipantry/goals_approaches.png" alt="Goals and Approaches" />
+      <!-- goals and approaches -->
+      <div class="grid">
+        <div class="grid-box">
+          <div class="grid-box-image">
+            <img src="content/unipantry/grocery_list_icon.png" alt="Grocery List Icon" />
+          </div>
+          <div class="grid-box-text">
+            <p><strong>Goal</strong></p>
+            <p>Help students develop adulting skills such as grocery shopping.</p>
+            <p><strong>Approaches</strong></p>
+            <p>
+              Make it easy for users to see and plan their grocery list.            </p>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="grid-box-image">
+            <img src="content/unipantry/pantry_icon.png" alt="Pantry Icon" />
+          </div>
+          <div class="grid-box-text">
+            <p><strong>Goal</strong></p>
+            <p>Help students keep track and use up the items in their pantry.</p>
+            <p><strong>Approaches</strong></p>
+            <p>
+              Help users see all their food items at once to decide what to eat.            </p>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="grid-box-image">
+            <img src="content/unipantry/recipebook_icon.png" alt="Recipe Icon" />
+          </div>
+          <div class="grid-box-text">
+            <p><strong>Goal</strong></p>
+            <p>Help students find healthy, easy-to-make recipes.</p>
+            <p><strong>Approaches</strong></p>
+            <p>
+              Create a recipe collection with a filtering system suited for
+               different food and time preferences.</p>
+          </div>
+        </div>  
       </div>
 
     </section>
@@ -172,48 +209,151 @@
           and users.
       </h6>
 
-      <h5>Improving the Visual Hierarchy of the Grocery List</h5>
+      <h5>Improving the Visual Design of the Grocery List</h5>
 
       <h6>
-        In order to make the Grocery List more visually consistent,
-         I decided to remove the pictures of food. Although they make the
-          page more exciting to look at, I discovered that they do not make
-           a difference in the user’s understanding and add a layer of
-            difficulty for our software team. I also decided to extend the
-             grocery categories to cover the width of the screen, in order
-              to make the visual separation of the category sections more
-               clear. The labeling of the different categories are important
-                to users because it helps them efficiently shop at different
-                 sections of the grocery store, one at a time.  
+        I designed the initial Grocery List with the vision of a colorful,
+         visually appealing interface. However, upon revisiting my design,
+          I observed that the interface over-highlighted individual grocery
+           items, causing blurred section separation and unclear visual
+            hierarchy. I knew this was a problem because users had indicated
+             that they greatly relied on the clear categorization of items to
+              shop efficiently in grocery stores. Therefore, I made the
+               following UI changes to more clearly represent the users’ mental
+                model:
       </h6>
 
-      <div class="big-image">
-        <img src="content/unipantry/grocerylist_before_after.png" alt="Grocery List Before and After" />
+      <ul>
+        <li>
+          <p>
+            Made the grocery category headers more visible
+          </p>
+        </li>
+        <li>
+          <p>
+            Made the visual separation of individual items more clear
+          </p>
+        </li>
+        <li>
+          <p>
+            Reduced the visibility of “Recently Bought” items so users can
+             focus their attention on the items they still need
+          </p>
+        </li>
+        <li>
+          <p>
+            Removed the images because they distracted from primary affordances
+             and added a layer of difficulty for the software team
+          </p>
+        </li>
+      </ul>
+
+      <div class="grid">
+
+        <div class="grid-box">
+          <div class="grid-box-text">
+            <p>Before</p>
+          </div>
+          <div class="grid-box-image">
+            <img src="content/unipantry/grocerylist_before.png" alt="Grocery List Before" />
+          </div>
+        </div>
+
+        <div class="grid-box">
+          <div class="grid-box-text">
+            <p>After</p>
+          </div>
+          <div class="grid-box-image">
+            <img src="content/unipantry/grocerylist_after.png" alt="Grcoery List After" />
+          </div>
+        </div>
+
       </div>
 
-      <h5>Making Grocery List Intuitive to Edit</h5>
+      <h5>Making Changes to Grocery List Based on User Feedback</h5>
 
       <h6>
-        To make the deleting affordance more intuitive, I changed the
-         checking action to a left-swiping action instead. This also helps
-          the user not get confused about which side of the grocery card to
-           click when checking off an item. 
+        I conducted usability testing by giving users a set of tasks to
+         complete and observing their actions, as well as asking them follow-up
+          questions to gauge the effectiveness of my design. From the usability
+           tests, I was able to discover the users’ confusions and change my
+            design to more clearly communicate how and where the user can
+             interact with the interface.
       </h6>
 
-      <div class="big-image">
-        <img src="content/unipantry/groceryediting_before_after.png" alt="Grocery Editing Before and After" />
+      <div class="grid">
+
+        <div class="grid-box">
+          <div class="grid-box-image">
+            <img src="content/unipantry/grocery_editing_before.png" alt="Grocery Editing Before" />
+          </div>
+          <div class="grid-box-text">
+            <p><strong>Before</strong></p>
+            <p>😕 Deleting an item feels unnatural </p>
+            <p>👎 The fact that there are two areas you can check is confusing</p>
+          </div>
+        </div>
+
+        <div class="grid-box">
+          <div class="grid-box-image">
+            <img src="content/unipantry/grocery_editing_after.png" alt="Grocery Editing After" />
+          </div>
+          <div class="grid-box-text">
+            <p><strong>After</strong></p>
+            <p>😃  The deleting action feels standard and easy to find</p>
+            <p>😃  Checking off an item feels intuitive</p>
+          </div>
+        </div>
+
       </div>
 
-      <h5>Improving the Accessibility of Recipe Filtering</h5>
+      <h5>Improving the Usability of the Filtering Function</h5>
 
       <h6>
-        I redesigned the filter function to be more suited to the
-         mobile screen, enlarging the selection area while conserving
-          space and clearly indicating the state of the filter. 
+        In order to make the filter function feel more seamless and efficient,
+         I made the following redesign changes:
       </h6>
 
-      <div class="big-image">
-        <img src="content/unipantry/recipefiltering_before_after.png" alt="Recipe Before and After" />
+      <ul>
+        <li>
+          <p>
+            Altered the interaction so that the user can view all their
+             options with one click
+          </p>
+        </li>
+        <li>
+          <p>
+            More clearly communicated to the user that they can choose more
+             than one category option
+          </p>
+        </li>
+        <li>
+          <p>
+            Allowed the user to choose when they want to start applying the filter
+          </p>
+        </li>
+      </ul>
+
+      <div class="grid">
+
+        <div class="grid-box">
+          <div class="grid-box-text">
+            <p>Before</p>
+          </div>
+          <div class="grid-box-image">
+            <img src="content/unipantry/recipes_filtering_before.png" alt="Recipe Filtering Before" />
+          </div>
+        </div>
+
+        <div class="grid-box">
+          <div class="grid-box-text">
+            <p>After</p>
+          </div>
+          <div class="grid-box-image">
+            <img src="content/unipantry/recipes_filtering_after.png" alt="Recipe Filtering After" />
+          </div>
+        </div>
+
       </div>
 
     </section>
