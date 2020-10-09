@@ -201,7 +201,7 @@ header a {
     font-size: 12pt;
     color: #828282;
     text-decoration: none;
-    font-family: "Lora", serif;
+    font-family: sans-serif;
 }
 
 .logo {
@@ -236,6 +236,11 @@ header a {
 
 a img:hover {
     transform: translate3D(0,-1px,0) scale(1.03);
+}
+
+.home-header {
+    text-align: center;
+    padding: 10px;
 }
 
 /* footer */
